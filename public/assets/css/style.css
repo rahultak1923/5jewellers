@@ -90,8 +90,8 @@ h2 {
 }
 
 .header_section.innerpage_header {
-  position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(#160e0b), to(#160e0b));
+  position: absolute;
+  /* background: -webkit-gradient(linear, left top, right top, from(#160e0b), to(#160e0b)); */
   background: linear-gradient(to right, #160e0b, #160e0b);
   padding: 10px 0;
 }
