@@ -8,3 +8,12 @@
     padding-top: 150px;
     padding-bottom: 75px;
   }
+.font-size-13{
+    font-size: 1.3rem;
+}
+.font-size-13 a{
+    text-decoration: none;
+}
+.text-decorastion{
+    text-decoration: none;
+}

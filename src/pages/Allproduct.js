@@ -24,7 +24,7 @@ const Allproduct = () => {
                   key={product.id || product._id} // Use a unique identifier
                 >
                   <div className="box">
-                    <a href="#">
+                    <a href="#" className='text-decorastion'>
                       <div className="img-box">
                         {/* Use the product image from the API */}
                         <img

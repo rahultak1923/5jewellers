@@ -17,11 +17,19 @@ const Navbar = () => {
             >
                 <div className="container-fluid">
                     <nav className="navbar navbar-expand-lg custom_nav-container">
-                        <a className="navbar-brand text-white" href="index.html">
+                        <a className="navbar-brand text-white" href="/">
                             <span>
-                                Healet
+                                5 Jeweller's
                             </span>
                         </a>
+                        <div id="myNav" className="heading_container pt-2 ml-5 font-size-13">
+                                    <div className="">
+                                        <a href="/" className='text-white mx-3 '>Home</a>
+                                        <a href="/" className='text-white mx-3 '>About</a>
+                                        <a href="/allproduct" className='text-white mx-3 '>Jewellery</a>
+                                        <a href="/" className='text-white mx-3 '>Contact</a>
+                                    </div>
+                                </div>
                         <div className="" id="">
 
                             <div className="custom_menu-btn">

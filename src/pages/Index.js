@@ -22,8 +22,8 @@ const Index = () => {
             looking at its layout. The point of using Lorem
           </p>
           <div>
-            <a href="/" className="slider-link">
-              Shop Now
+            <a href="/" className="slider-link text-decorastion">
+              View Jewellery
             </a>
           </div>
         </div>
@@ -41,7 +41,7 @@ const Index = () => {
       <div className="row">
         <div className="col-sm-6 col-md-4 col-lg-3">
           <div className="box">
-            <a href="">
+            <a href="" className='text-decorastion'>
               <div className="img-box">
                 <img src="assets/images/p1.png" alt=""/>
               </div>
@@ -66,7 +66,7 @@ const Index = () => {
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <div className="box">
-            <a href="">
+            <a href="" className='text-decorastion'>
               <div className="img-box">
                 <img src="assets/images/p2.png" alt=""/>
               </div>
@@ -91,7 +91,7 @@ const Index = () => {
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <div className="box">
-            <a href="">
+            <a href="" className='text-decorastion'>
               <div className="img-box">
                 <img src="assets/images/p3.png" alt=""/>
               </div>
@@ -116,7 +116,7 @@ const Index = () => {
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <div className="box">
-            <a href="">
+            <a href="" className='text-decorastion'>
               <div className="img-box">
                 <img src="assets/images/p4.png" alt=""/>
               </div>
@@ -141,7 +141,7 @@ const Index = () => {
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <div className="box">
-            <a href="">
+            <a href="" className='text-decorastion'>
               <div className="img-box">
                 <img src="assets/images/p5.png" alt=""/>
               </div>
@@ -166,7 +166,7 @@ const Index = () => {
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <div className="box">
-            <a href="">
+            <a href="" className='text-decorastion'>
               <div className="img-box">
                 <img src="assets/images/p6.png" alt=""/>
               </div>
@@ -191,7 +191,7 @@ const Index = () => {
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <div className="box">
-            <a href="">
+            <a href="" className='text-decorastion'>
               <div className="img-box">
                 <img src="assets/images/p7.png" alt=""/>
               </div>
@@ -216,7 +216,7 @@ const Index = () => {
         </div>
         <div className="col-sm-6 col-md-4 col-lg-3">
           <div className="box">
-            <a href="">
+            <a href="" className='text-decorastion'>
               <div className="img-box">
                 <img src="assets/images/p8.png" alt=""/>
               </div>
@@ -240,8 +240,8 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="btn-box">
-        <a href="/shop.html">
+      <div className="btn-box ">
+        <a href="/allproduct" className='text-decorastion'>
           View All Products
         </a>
       </div>
@@ -249,19 +249,20 @@ const Index = () => {
   </section>
 
   {/* about  */}
+
   <section className="about_section  ">
     <div className="container">
       <div className="row">
         <div className="col-md-6">
           <div className="img-box">
-            <img src="assets/images/about-img.jpg" alt=""/>
+            <img src="assets/images/about.png" alt=""/>
           </div>
         </div>
         <div className="col-md-6">
           <div className="detail-box">
             <div className="heading_container">
               <h2>
-                About Us
+                 5 Jeweller's
               </h2>
             </div>
             <p>
@@ -376,7 +377,7 @@ const Index = () => {
     </div>
   </section>
   {/* client section */}
-  <section className="client_section layout_padding">
+  {/* <section className="client_section layout_padding">
     <div className="container">
       <div className="heading_container">
         <h2>
@@ -470,7 +471,7 @@ const Index = () => {
         </div>
       </div>
     </div>
-  </section>
+  </section> */}
   {/* info section */}
   <section className="info_section layout_padding2">
     <div className="container">
@@ -580,8 +581,8 @@ const Index = () => {
   <footer className="footer_section">
     <div className="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        &copy; <span id="displayYear"></span> All Rights Reserved By 
+        <a href="https://rahultak.com/"> 5 jeweller's</a>
       </p>
     </div>
   </footer>
