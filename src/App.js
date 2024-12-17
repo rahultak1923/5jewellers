@@ -3,6 +3,7 @@ import './App.css';
 import Index from './pages/Index';
 import About from './pages/About';
 import Navbar from './components/Navbar';
+import Allproduct from './pages/Allproduct';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Index />} />
           <Route path='/about' element={<About />} />
+          <Route path='/allproduct' element={<Allproduct/>}/>
         </Routes>
       </BrowserRouter>
     </div>
