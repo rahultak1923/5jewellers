@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "jewellery_name": "Necklace rahul",
+      "price": 8000,
+      "Karatage": 22,
+      "Material Colour": "Yellow",
+      "Metal": "Gold",
+      "isNew": true
+    },
+    {
+      "id": 2,
+      "jewellery_name": "Silver Ring",
+      "price": 804500,
+      "Karatage": 22,
+      "Material Colour": "Yellow",
+      "Metal": "Gold",
+      "isNew": false
+    }
+]
