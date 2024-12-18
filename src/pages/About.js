@@ -36,24 +36,28 @@ const about = () => {
   {/* about section */}
   <section className="about_section layout_padding-t">
     <div className="container">
-      <div className="row">
+      <div className="row align-items-start">
         <div className="col-md-6">
           <div className="img-box">
-            <img src="assets/images/about-img.jpg" alt=""/>
+            <img src="assets/images/about.png" alt=""/>
           </div>
         </div>
         <div className="col-md-6">
-          <div className="detail-box">
+          <div className="detail-box padding-top-2">
             <div className="heading_container">
               <h2>
-                About Us
+                About Us -  5 jeweller's
               </h2>
+              
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem eum consequuntur ipsam repellat dolor soluta aliquid laborum, eius odit consectetur vel quasi in quidem, eveniet ab est corporis tempore.
+            <p className='mt-3'>
+            This project is a SaaS application in which jewelry shop owners can showcase their products on a website. Through the website, they can upload their products using a form in the admin panel. After filling in the product details via the admin panel, the product will be displayed on their website. Additionally, there is a contact page for users with a contact button and a WhatsApp button. Clicking on these buttons will allow users to either make a call or send a WhatsApp message to the shop owner.
             </p>
-            <a href="">
-              Read More
+            <p>
+            The shop owner can edit their jewelry listings, change prices, or mark jewelry items as out of stock.
+            </p>
+            <a href="/allproduct" className='text-decorastion'>
+              View Product
             </a>
           </div>
         </div>

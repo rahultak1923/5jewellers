@@ -25,7 +25,7 @@ const Navbar = () => {
                         <div id="myNav" className="heading_container pt-2 ml-5 font-size-13">
                                     <div className="">
                                         <a href="/" className='text-white mx-3 '>Home</a>
-                                        <a href="/" className='text-white mx-3 '>About</a>
+                                        <a href="/about" className='text-white mx-3 '>About</a>
                                         <a href="/allproduct" className='text-white mx-3 '>Jewellery</a>
                                         <a href="/" className='text-white mx-3 '>Contact</a>
                                     </div>

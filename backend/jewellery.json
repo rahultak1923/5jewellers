@@ -16,5 +16,14 @@
       "Material Colour": "Yellow",
       "Metal": "Gold",
       "isNew": false
+    },
+    {
+      "id": 3,
+      "jewellery_name": "Silver Ring",
+      "price": 804500,
+      "Karatage": 22,
+      "Material Colour": "Yellow",
+      "Metal": "Gold",
+      "isNew": false
     }
 ]

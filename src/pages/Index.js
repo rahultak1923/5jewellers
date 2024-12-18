@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { getPosts } from '../api'
 
 const Index = () => {
+  const[data, setData] = useState();
+  
+    useEffect(()=>{
+      getPosts().then((posts)=> setData(posts))
+    },[])
   return (
     <div>
      
@@ -22,7 +28,7 @@ const Index = () => {
             looking at its layout. The point of using Lorem
           </p>
           <div>
-            <a href="/" className="slider-link text-decorastion">
+            <a href="/allproduct" className="slider-link text-decorastion">
               View Jewellery
             </a>
           </div>
@@ -31,7 +37,7 @@ const Index = () => {
     </div>
   </section>
 
-  <section className="shop_section layout_padding">
+  {/* <section className="shop_section layout_padding">
     <div className="container">
       <div className="heading_container heading_center">
         <h2>
@@ -246,29 +252,79 @@ const Index = () => {
         </a>
       </div>
     </div>
-  </section>
+  </section> */}
+
+<section className="shop_section layout_padding-t">
+        <div className="container">
+          <div className="heading_container heading_center">
+            <h2>Latest Products</h2>
+          </div>
+          <div className="row">
+            {/* agar sirf 1 hi data hai to data.length ka use karna chahiye  */}
+            {data  ? (
+              data.map((product) => (
+                <div
+                  className="col-sm-6 col-md-4 col-lg-3"
+                  key={product.id || product._id} // Use a unique identifier
+                >
+                  <div className="box">
+                    <a href="/single" className='text-decorastion'>
+                      <div className="img-box">
+                        {/* Use the product image from the API */}
+                        <img
+                          src={product.image || "assets/images/p8.png"} // Fallback if no image
+                          alt={product.jewellery_name}
+                        />
+                      </div>
+                      <div className="detail-box">
+                        <h6>{product.jewellery_name}</h6>
+                        <h6>
+                          Price
+                          <span>${product.price || "N/A"}</span>
+                        </h6>
+                      </div>
+                      {product.isNew && (
+                        <div className="new">
+                          <span>New</span>
+                        </div>
+                      )}
+                    </a>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <p>No products available</p>
+            )}
+          </div>
+          <div className="btn-box">
+            <a href="/allproduct" className='text-decorastion'>View All Products</a>
+          </div>
+        </div>
+      </section>
 
   {/* about  */}
 
-  <section className="about_section  ">
+  <section className="about_section">
     <div className="container">
-      <div className="row">
+      <div className="row align-items-start">
         <div className="col-md-6">
           <div className="img-box">
             <img src="assets/images/about.png" alt=""/>
           </div>
         </div>
         <div className="col-md-6">
-          <div className="detail-box">
+          <div className="detail-box padding-top-2">
             <div className="heading_container">
               <h2>
-                 5 Jeweller's
+                About Us -  5 jeweller's
               </h2>
+              
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem eum consequuntur ipsam repellat dolor soluta aliquid laborum, eius odit consectetur vel quasi in quidem, eveniet ab est corporis tempore.
+            <p className='mt-3'>
+            This project is a SaaS application in which jewelry shop owners can showcase their products on a website. Through the website, they can upload their products using a form in the admin panel. After filling in the product details via the admin panel, the product will be displayed on their website. Additionally, there is a contact page for users with a contact button and a WhatsApp button. Clicking on these buttons will allow users to either make a call or send a WhatsApp message to the shop owner.
             </p>
-            <a href="">
+            
+            <a href="/about" className='text-decorastion'>
               Read More
             </a>
           </div>
@@ -321,7 +377,7 @@ const Index = () => {
     </div>
   </section>
   {/* blog section */}
-  <section className="blog_section ">
+  {/* <section className="blog_section ">
     <div className="container">
       <div className="heading_container">
         <h2>
@@ -375,7 +431,7 @@ const Index = () => {
         </div>
       </div>
     </div>
-  </section>
+  </section> */}
   {/* client section */}
   {/* <section className="client_section layout_padding">
     <div className="container">
